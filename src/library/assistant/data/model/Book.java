@@ -10,15 +10,19 @@ public class Book {
     String author;
     String publisher;
     Boolean isAvail;
-
-    public Book(String id, String title, String author, String publisher, Boolean isAvail) {
+    String genre;
+    public Book(String id, String title, String author, String publisher, Boolean isAvai, String genre) {
         this.id = id;
         this.title = title;
         this.author = author;
         this.publisher = publisher;
         this.isAvail = isAvail;
+        this.genre = genre;
     }
 
+    public String getGenre(){
+        return genre;
+    }
     public String getId() {
         return id;
     }
